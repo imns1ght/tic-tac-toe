@@ -5,6 +5,7 @@ import java.lang.String;
 public class Player {
 	public Player() {
 		this.nickname = "";
+		this.play_symbol = 0;
 	}
 
 	public Player(String nickname, int play_symbol) {
@@ -12,19 +13,19 @@ public class Player {
 		this.play_symbol = play_symbol;
 	}
 
-	public String getNickname() {
+	protected String getNickname() {
 		return nickname;
 	}
 
-	public void setNickname(String nickname) {
+	protected void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
 
-	public int getPlay_symbol() {
+	protected int getPlay_symbol() {
 		return play_symbol;
 	}
 
-	public void setPlay_symbol(int play_symbol) {
+	protected void setPlay_symbol(int play_symbol) {
 		this.play_symbol = play_symbol;
 	}
 
